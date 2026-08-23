@@ -8,7 +8,7 @@ const projects = [
     emoji: '🐍',
     gradient: 'linear-gradient(135deg, #00c853, #1b5e20)',
     tech: ['Python', 'Tkinter'],
-    github: 'https://github.com/yourusername/snake-game',
+    github: 'https://github.com/bhonehtet636',
     demo: '',
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     emoji: '💼',
     gradient: 'linear-gradient(135deg, #aa3bff, #4a148c)',
     tech: ['React', 'TypeScript', 'Vite', 'CSS'],
-    github: 'https://github.com/yourusername/my-portfolio',
+    github: 'https://github.com/bhonehtet636/my-portfolio',
     demo: '',
   },
 ]
