@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import AboutMe from './components/AboutMe'
 import Projects from './components/Projects'
+import Contact from './components/Contact'
 import './App.css'
 
 function App() {
@@ -20,13 +21,11 @@ function App() {
         </section>
         <AboutMe />
         <Projects />
+        <Contact />
       </main>
-      <footer id="contact" className="footer">
+      <footer className="footer">
         <div className="container">
-          <p>
-            Contact:{' '}
-            <a href="mailto:imbhonehtetung@gmail.com">imbhonehtetung@gmail.com</a>
-          </p>
+          <p>© {new Date().getFullYear()} Bhone Htet Aung</p>
         </div>
       </footer>
     </>
