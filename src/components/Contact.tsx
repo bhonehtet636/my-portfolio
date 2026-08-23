@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import type { FormEvent } from 'react'
+import Reveal from './Reveal'
 import './Contact.css'
 
 const EMAIL = 'imbhonehtetaung@gmail.com'
@@ -36,10 +37,13 @@ function Contact() {
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <h2 className="section-title">Contact Me</h2>
-        <p className="contact-intro">
-          မေးခွန်းမေးလိုပါက / အလုပ်ချုပ်ဆိုလိုပါက ဒီ form ကနေ ပို့နိုင်ပါသည်။
-        </p>
+        <Reveal>
+          <h2 className="section-title">Contact Me</h2>
+          <p className="contact-intro">
+            မေးခွန်းမေးလိုပါက / အလုပ်ချုပ်ဆိုလိုပါက ဒီ form ကနေ ပို့နိုင်ပါသည်။
+          </p>
+        </Reveal>
+        <Reveal delay={120}>
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-row">
             <input type="text" name="name" placeholder="Your Name" required />
@@ -60,6 +64,7 @@ function Contact() {
             </p>
           )}
         </form>
+        </Reveal>
       </div>
     </section>
   )

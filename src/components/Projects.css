@@ -9,9 +9,14 @@
   gap: 24px;
 }
 
+.projects-grid .reveal {
+  height: 100%;
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
+  height: 100%;
   border: 1px solid var(--border);
   border-radius: 12px;
   overflow: hidden;

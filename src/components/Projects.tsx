@@ -1,3 +1,4 @@
+import Reveal from './Reveal'
 import './Projects.css'
 
 const projects = [
@@ -27,10 +28,13 @@ function Projects() {
   return (
     <section id="projects" className="projects">
       <div className="container">
-        <h2 className="section-title">Projects</h2>
+        <Reveal>
+          <h2 className="section-title">Projects</h2>
+        </Reveal>
         <div className="projects-grid">
-          {projects.map((project) => (
-            <article key={project.title} className="project-card">
+          {projects.map((project, index) => (
+            <Reveal key={project.title} delay={index * 120}>
+              <article className="project-card">
               <div className="project-thumb" style={{ background: project.gradient }}>
                 <span aria-hidden="true">{project.emoji}</span>
               </div>
@@ -53,7 +57,8 @@ function Projects() {
                   )}
                 </div>
               </div>
-            </article>
+              </article>
+            </Reveal>
           ))}
         </div>
       </div>
