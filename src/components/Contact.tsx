@@ -2,7 +2,7 @@ import { useState } from 'react'
 import type { FormEvent } from 'react'
 import './Contact.css'
 
-const EMAIL = 'imbhonehtetung@gmail.com'
+const EMAIL = 'imbhonehtetaung@gmail.com'
 
 type Status = 'idle' | 'sending' | 'success' | 'error'
 
