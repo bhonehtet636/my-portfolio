@@ -14,12 +14,7 @@
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 64px;
-  font-weight: 700;
-  color: #fff;
-  background: linear-gradient(135deg, var(--accent), #6d28d9);
+  object-fit: cover;
   box-shadow: var(--shadow);
 }
 

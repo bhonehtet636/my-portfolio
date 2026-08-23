@@ -1,3 +1,4 @@
+import profileImg from '../assets/profile.jpg'
 import './AboutMe.css'
 
 const skills = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Git']
@@ -8,9 +9,11 @@ function AboutMe() {
       <div className="container">
         <h2 className="section-title">About Me</h2>
         <div className="about-grid">
-          <div className="about-avatar" aria-hidden="true">
-            B
-          </div>
+          <img
+            className="about-avatar"
+            src={profileImg}
+            alt="Bhone Htet Aung"
+          />
           <div>
             <p className="about-text">
               မင်္ဂလာပါ။ ကျွန်တော်က Web Developer တစ်ယောက်ဖြစ်ပြီး React
