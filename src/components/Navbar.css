@@ -70,7 +70,30 @@
 }
 
 @media (max-width: 768px) {
-  .navbar-toggle {
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-theme-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.3s;
+}
+
+.navbar-theme-btn:hover {
+  background: var(--accent-bg);
+}
+
+.navbar-toggle {
     display: flex;
   }
 
